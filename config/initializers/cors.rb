@@ -6,7 +6,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     end 
     allow do 
         # Production app is going to be on this.
-        origins "https://goofy-goldstine-c936b6.netlify.app"
+        origins "https://test-dreamway-test-app.herokuapp.com/"
         resource "*", headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head],
         credentials: true 
     end 
